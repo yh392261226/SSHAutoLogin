@@ -1,7 +1,7 @@
 #!/bin/bash
 
 #基础目录
-BaseDir="/etc/ssh_login"
+BaseDir="$MYRUNTIME/customs/others/SSHAutoLogin"
 
 #配置文件下载地址
 #iniUrl="https://raw.githubusercontent.com/jiangxianli/SSHAutoLogin/master/host.ini"
@@ -31,7 +31,7 @@ case $SYSTEM_NAME in
         apt-get install -y curl expect
         ;;
     'mac' )
-        brew install -y curl expect
+        brew install curl expect
         ;;
 esac
 
@@ -48,6 +48,6 @@ chmod u+x $BaseDir/ssh_login
 echo -e "写入可执行文件ssh_login到$BaseDir/ssh_login ......\n"
 
 #创建软连
-ln -sf  $BaseDir/ssh_login /usr/local/bin/
+ln -sf  $BaseDir/ssh_login $MYRUNTIME/customs/bin/ssh_login
 echo  -e "按照完毕，可以放心开始 ssh_login 命令啦!  ......\n"
 

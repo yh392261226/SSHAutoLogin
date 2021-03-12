@@ -11,7 +11,7 @@
 CONFIGS=()
 
 #基础目录
-BaseDir="/etc/ssh_login"
+BaseDir="$MYRUNTIME/customs/others/SSHAutoLogin"
 #配置文件目录
 CONFIG_PATH="$BaseDir/host.ini"
 #配置文件下载地址
