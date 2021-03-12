@@ -1,4 +1,4 @@
 .idea
 .DS_Store
 server_config
-local_hosts.ini
+local_host.ini

@@ -4,12 +4,12 @@
 BaseDir="$MYRUNTIME/customs/others/SSHAutoLogin"
 
 #配置文件下载地址
-#iniUrl="https://raw.githubusercontent.com/jiangxianli/SSHAutoLogin/master/host.ini"
-iniUrl="https://www.jiangxianli.com/SSHAutoLogin/host.ini"
+iniUrl="https://raw.githubusercontent.com/yh392261226/SSHAutoLogin/master/host.ini"
+# iniUrl="https://www.jiangxianli.com/SSHAutoLogin/host.ini"
 
 #可执行文件下载地址
-#exeUrl="https://raw.githubusercontent.com/jiangxianli/SSHAutoLogin/master/ssh_login.sh"
-exeUrl="https://www.jiangxianli.com/SSHAutoLogin/ssh_login.sh"
+exeUrl="https://raw.githubusercontent.com/yh392261226/SSHAutoLogin/master/ssh_login.sh"
+# exeUrl="https://www.jiangxianli.com/SSHAutoLogin/ssh_login.sh"
 
 ##
 # 检查基础目录是否存在

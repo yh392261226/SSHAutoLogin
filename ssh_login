@@ -15,8 +15,8 @@ BaseDir="$MYRUNTIME/customs/others/SSHAutoLogin"
 #配置文件目录
 CONFIG_PATH="$BaseDir/local_host.ini"
 #配置文件下载地址
-#iniUrl="https://raw.githubusercontent.com/jiangxianli/SSHAutoLogin/master/host.ini"
-iniUrl="https://www.jiangxianli.com/SSHAutoLogin/host.ini"
+iniUrl="https://raw.githubusercontent.com/yh392261226/SSHAutoLogin/master/host.ini"
+# iniUrl="https://www.jiangxianli.com/SSHAutoLogin/host.ini"
 
 # 读取配置文件
 if [ -f ${CONFIG_PATH} ]; then
