@@ -39,7 +39,7 @@ CheckDir
 cd $BaseDir
 
 #写入配置文件
-curl -s -ko  $BaseDir/host.ini --connect-timeout 300 --retry 5 --retry-delay 3 $iniUrl
+curl -s -ko  $BaseDir/local_host.ini --connect-timeout 300 --retry 5 --retry-delay 3 $iniUrl
 echo -e "写入配置文件host.ini到$BaseDir/host.ini ......\n"
 
 #写入可执行文件

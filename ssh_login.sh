@@ -13,7 +13,7 @@ CONFIGS=()
 #基础目录
 BaseDir="$MYRUNTIME/customs/others/SSHAutoLogin"
 #配置文件目录
-CONFIG_PATH="$BaseDir/host.ini"
+CONFIG_PATH="$BaseDir/local_host.ini"
 #配置文件下载地址
 #iniUrl="https://raw.githubusercontent.com/jiangxianli/SSHAutoLogin/master/host.ini"
 iniUrl="https://www.jiangxianli.com/SSHAutoLogin/host.ini"
