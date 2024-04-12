@@ -145,13 +145,17 @@ function AutoLogin(){
     fi
 
 	export PASSWORD=${CONFIG[5]};
-
+    rows=$(stty size | awk '{print $1}')
+    columns=$(stty size | awk '{print $2}')
     command="
         expect {
                 \"*assword\" {set timeout 6000; send \$env(PASSWORD)\r; exp_continue ; sleep 3; }
                 \"*passphrase\" {set timeout 6000; send \$env(PASSWORD)\n\r; exp_continue ; sleep 3; }
                 \"yes/no\" {send \"yes\n\"; exp_continue;}
                 \"Last*\" {  send_user \"\n成功登录【${CONFIG[1]}】\n\";}
+        }
+        expect  \"\#\" {
+            send -- \"stty rows $rows columns $columns \n\"
         }
        interact
     ";
